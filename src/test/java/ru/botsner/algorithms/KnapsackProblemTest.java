@@ -19,4 +19,20 @@ class KnapsackProblemTest {
 
         assertEquals(expectedValue, actualValue);
     }
+
+    @Test
+    void discreteKnapsackProblemApprox() {
+        double expectedValue = 32.0;
+        double actualValue = KnapsackProblem.discreteKnapsackProblemApprox(items, capacity);
+
+        assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    void discreteKnapsackProblemDynamic() {
+        double expectedValue = 38.0;
+        double actualValue = KnapsackProblem.discreteKnapsackProblemDynamic(items, capacity);
+
+        assertEquals(expectedValue, actualValue);
+    }
 }
